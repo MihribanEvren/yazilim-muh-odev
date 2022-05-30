@@ -16,4 +16,14 @@ public class hesap_makinesi{
         System.out.println("Toplama isleminin sonucu = " + (sayi1 + sayi2));
     }
 
+    public static void bolmeIslemi(){
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("1. Sayıyı giriniz: ");
+        int sayi1 = scanner.nextInt();
+        System.out.print("2. Sayıyı giriniz: ");
+        int sayi2 = scanner.nextInt();
+        System.out.println("Bölme isleminin sonucu = " + (sayi1 / sayi2)); 
+    }
+
 }
