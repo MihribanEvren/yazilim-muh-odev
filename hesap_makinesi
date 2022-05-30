@@ -23,7 +23,12 @@ public class hesap_makinesi{
         int sayi1 = scanner.nextInt();
         System.out.print("2. Sayıyı giriniz: ");
         int sayi2 = scanner.nextInt();
-        System.out.println("Bölme isleminin sonucu = " + (sayi1 / sayi2)); 
+        try {
+            System.out.println("Bölme isleminin sonucu = " + (sayi1 / sayi2)); 
+        }
+        catch (ArithmeticException e) {
+            System.out.println("Sıfıra bölme hatası");
+        }; 
     }
 
 }
